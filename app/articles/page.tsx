@@ -57,7 +57,7 @@ export default function ArticlesPage() {
       )
 
       // Scroll-triggered animations
-      cardRefs.current.forEach((card, index) => {
+      cardRefs.current.forEach((card) => {
         if (card) {
           gsap.fromTo(
             card,
@@ -118,7 +118,7 @@ export default function ArticlesPage() {
             Mountain Explorer
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Discover insights, guides, and stories from the world's most spectacular mountain ranges
+            Discover insights, guides, and stories from the world&apos;s most spectacular mountain ranges
           </p>
         </div>
       </div>
