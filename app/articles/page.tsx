@@ -129,7 +129,9 @@ export default function ArticlesPage() {
           {articlesData.articles.map((article, index) => (
             <Card
               key={article.id}
-              ref={(el) => (cardRefs.current[index] = el)}
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
               className="group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-white/80 backdrop-blur-sm border-0 shadow-lg"
               onClick={() => handleReadMore(article)}
             >
