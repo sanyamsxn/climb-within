@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,4 +62,17 @@ html {
 .s{
   text-shadow: 2px 3px 1px black;
   color: rgb(54, 24, 24);
+}
+
+.journey, .scroll{
+   background: linear-gradient(to right, rgb(12, 240, 237), rgb(133, 214, 255), rgb(61, 100, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#headerP{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
 }

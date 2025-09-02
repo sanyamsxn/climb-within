@@ -1,29 +1,85 @@
-"use client"
+// "use client"
+
+// import { usePathname } from "next/navigation";
+// import  Link  from "next/link";
+// import "./header.css"
+// export default function Header() {
+// const pathname = usePathname();
+
+//   return (
+//             <header>
+//                     <div id="leftMenu">
+//                         <ul>
+//                             <Link href="/home"><li>Home</li></Link>
+//                             <li>About</li>
+//                             <Link href="/facilitator"><li>Partners</li></Link>
+//                             <li>Programs</li>
+//                             <Link href="/testimonials"><li>Testimonials</li></Link>
+//                         </ul>
+//                     </div>
+//                     <div id="rightMenu">
+
+//                                         {pathname === "/contact" ? (
+//                         <span className="text-indigo-400  opacity-0">
+//                             Contact
+//                         </span>
+//                         ) : (
+//                             <Link href="/contact" className="contact" >Contact</Link>
+                        
+//                         )}
+//                     </div>
+//                 </header>
+//   );
+// }
 
 
-import  Link  from "next/link";
-import "./header.css"
+"use client";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import "./header.css";
+
 export default function Header() {
+  const pathname = usePathname();
 
+  const links = [
+    { href: "/home", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/facilitator", label: "Partners" },
+    { href: "/articles", label: "Programs" },
+    { href: "/testimonials", label: "Testimonials" },
+  ];
 
   return (
-    <section id="header">
-        <header id="navhead">
-            <div id="brand">
-                <h1>ClimbWithin</h1>
-            </div>
+    <header>
+      <div id="leftMenu">
+        <ul>
+          {links.map(({ href, label }) => (
+            <li key={href}>
+              <Link
+                href={href}
+                className={`nav-link ${
+                  pathname === href ? "active-link" : ""
+                }`}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-            <div id="nav">
-                <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><Link href="/#box3">About</Link></li>
-                    <li><a href="/facilitator">Facilitators</a></li>
-                    <li><a href="/articles">Blogs</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-    </section>
+      <div id="rightMenu">
+        {pathname === "/contact" ? (
+           <span className="opacity-0">
+            Contact
+          </span>
+        ) : (
+          <Link href="/contact" className="contact">
+            Contact
+          </Link>
+        )}
+      </div>
+    </header>
   );
 }

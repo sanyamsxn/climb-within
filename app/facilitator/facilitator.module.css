@@ -1,0 +1,258 @@
+
+
+#facilitator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#facilitatortop{
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    position: relative;
+}
+.fac1{
+    position: absolute;
+    bottom: 0%;
+    height: 300px;
+    width: 300px;
+    right: 0%;
+}
+.fac2{
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    height: 280px;
+    width: 280px;
+
+}
+#facilitatortop h1{
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    background: linear-gradient(to right, rgb(12, 240, 237), rgb(133, 214, 255), rgb(61, 100, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 100;
+}
+
+#facilitatortop p{
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(245, 245, 245, 0.697);
+    letter-spacing: -1px;
+    z-index: 10;
+}
+
+
+
+.facilitatorprofile{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+}
+
+.profile1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    border: 1px solid #222222;
+    box-shadow: 0 0 8px #565656; 
+}
+.profilepic{
+    width: 26%;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgb(4, 2, 21) 49%, rgb(11, 11, 38) 100%);
+}
+.profilepic .picc{
+    border-radius: 50%;
+}
+
+.profileinfo{
+    width: 74%;
+    height: 100%;
+    background:black
+}
+.profileinfo h3{
+    font-size: 1.4rem;
+    color: cyan;
+    padding-left: 35px;
+    margin: 0;
+}
+.profileinfo h4{
+    font-size:1.2rem ;
+    margin: 0;
+    padding-left: 33px;
+    margin-top: 4px;
+    color: rgb(146, 146, 146);
+}
+
+.profileinfo p{
+    padding-left: 30px;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    line-height: 1.7rem;
+    color: whitesmoke;
+    padding-right: 19px;
+}
+.infotop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.infotop h2{
+    font-size: 2.2rem;
+    padding-left: 2px;
+    color: rgb(223, 223, 223);
+}
+
+.infolinks{
+    display: flex;
+    gap: 10px;
+}
+.infolinks .link{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.infolinks .link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.infolinks .img-1{
+    height: 30px;
+    width:30px
+}
+.infolinks .img-2{
+    height: 23px;
+    width: 23px;
+}
+
+.profileinfo h3{
+    display: flex;
+    align-items: center;
+}
+
+.profileinfo h3 img{
+    height: 30px;
+    width: 30px;
+}
+
+.infobottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.infobottom h2{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: aliceblue;
+    
+}
+.infobottom h2 img{
+    height: 40px;
+    width: 40px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.tags h2{
+    width: auto;
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 8px #38bdf8; 
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin: 0;
+    color: cyan;
+}
+
+
+
+
+
+
+
+
+
+/* Gallery */
+#gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: black;
+}
+
+#gallery h1 {
+    margin-top: 100px;
+    font-size: clamp(2rem, 6vw, 5rem);
+    text-align: center;
+    background: linear-gradient(to right, rgb(12, 240, 237), rgb(133, 214, 255), rgb(61, 100, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
