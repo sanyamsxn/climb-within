@@ -5,21 +5,21 @@ import Header from "@/components/header";
 
 const testimonials = [
   {
-    name: "Marcus Rodriguez",
+    name: "Deepak",
     role: "Product Manager, InnovateX",
     quote:
       "The customer support is exceptional, and the platform itself is incredibly robust. We've been able to streamline our entire workflow.",
     image: "/photos/pf-1.jpg", // ✅ inside public/photos/
   },
   {
-    name: "Emily Watson",
+    name: "Rohan",
     role: "Creative Director, DesignStudio",
     quote:
       "As a creative professional I need tools that don't limit my imagination. This platform provides exactly that – unlimited possibilities.",
     image: "/photos/pf-1.jpg",
   },
   {
-    name: "Daniel Lee",
+    name: "Suresh",
     role: "CEO, FutureTech",
     quote:
       "This platform has transformed the way our team collaborates. Efficiency and creativity have both skyrocketed.",
